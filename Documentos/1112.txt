@@ -1,0 +1,54 @@
+Parametros de funcao com '?:' sao parametros nao obrigatorios, opcionais
+ja com ':' apenas sao obrigatorios.
+
+
+Ts é uma linguagem tipada que precisa da tipagem de cada objeto
+
+
+
+//variaveis
+let name: string = 'vit'  (A tipagem é obrigatoria no caso name: string)
+
+let num: number = 12 
+
+let tantoFaz: any          (Faz aceitar qualquer tipo de tipagem)
+tantoFaz = 0
+tantoFaz = 'String'
+tantoFaz = bool
+
+
+//array forma 1
+let array: Array<number> = [1,2,3]
+
+let array: Array<string> = ['1','2','3']
+
+//array forma 2 (forma mais rapida de ser escrita)
+let array: number[] = [1,2,3,4]
+
+let array2: string[] = ['1','2','3','4']
+
+Ambos as formas estao corretas, e sao transpiladas da mesma maneira e velocidade.
+
+//objetos
+let pessoa: {name:string,age:number} = {
+    names: 'Bruno'
+    age: 18
+}
+
+//funçao
+
+function sum(a: number, b: number): number {          Retorna a soma
+    return a + b
+}
+
+function sum(a: number, b: number): void {            Nao retorna nada
+    return a + b
+}
+
+
+function applyDiscount(price: number, discount:)
+
+
+Number()       força para numeros 
+.toString()    força para string
+
