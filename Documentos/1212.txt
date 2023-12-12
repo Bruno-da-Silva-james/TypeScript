@@ -1,0 +1,23 @@
+//Criar array com varias tipagens
+
+let mix: (string | number)[] = ['Maça',12,'Banana']         a ordem da tipagem é indiferente
+
+//Map percorre um array e cria um novo usando uma determinada modificaçao
+
+let numeros: number[] = [1,6,4]
+
+let dobrados: number[] = numeros.map(numero => numeros * 2)  //2,12,8
+
+//Filter filtra o array pra as determinadas açoes, ele majorietariamente é usado para retirare elementos usando uma condiçao
+
+let numeros: number[] = [1,6,4]
+
+let dobrados: number[] = numeros.filter(numero => numeros < 2) //1
+
+//Reduce precisa de dois parametros um acumulador e a var criada, o reduce soma todos os numeros de um array, a principio é usado desta maneira.
+
+let numeros: number[] = [1,6,4]
+
+let somaNumeros: number = numeros.reduce((acumulador,numero) => {     //11
+    return acumulador + numero
+},0)
