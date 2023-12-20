@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Monster_1 = require("./Monster");
+var Warrior_1 = require("./Warrior");
+var Moonstro = new Monster_1.Monster('Cachorro mau');
+var Guerreiro = new Warrior_1.Warrior('Perseus', 'Brute', 5);
+console.log("\nMonster Stats:\nName: ".concat(Moonstro.name, "\nHealth: ").concat(Moonstro.health, "\nForce: ").concat(Moonstro.force));
+console.log("\nWarrior Stats:\nName: ".concat(Guerreiro.name, "\nType: ").concat(Guerreiro.type, "\nHealth: ").concat(Guerreiro.health, "\nForce: ").concat(Guerreiro.force, "\n"));
+Moonstro.attackWarrior(Guerreiro);
+Guerreiro.attackMonster(Moonstro);
