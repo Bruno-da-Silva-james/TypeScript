@@ -20,4 +20,8 @@ export class Monster {
         this.health -= dmgRecived
         console.log(`${this.name} suffered ${dmgRecived} damage. Remaining health: ${this.health}`);
     }
+
+    lifeCheck(): void{
+        console.log(this.health);
+    }
 }

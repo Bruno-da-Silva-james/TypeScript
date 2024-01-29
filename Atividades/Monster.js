@@ -16,6 +16,9 @@ var Monster = /** @class */ (function () {
         this.health -= dmgRecived;
         console.log("".concat(this.name, " suffered ").concat(dmgRecived, " damage. Remaining health: ").concat(this.health));
     };
+    Monster.prototype.lifeCheck = function () {
+        console.log(this.health);
+    };
     return Monster;
 }());
 exports.Monster = Monster;

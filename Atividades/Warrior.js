@@ -17,6 +17,9 @@ var Warrior = /** @class */ (function () {
         this.health -= dmgRecived;
         console.log("".concat(this.name, " suffered ").concat(dmgRecived, " damage. Remaining health: ").concat(this.health));
     };
+    Warrior.prototype.lifeCheck = function () {
+        console.log(this.health);
+    };
     return Warrior;
 }());
 exports.Warrior = Warrior;
