@@ -1,10 +1,11 @@
 class Dog {
+    private name: string;
+    wheigt: Number;
+
     constructor(name: string, wheigt: Number) {
         this.name = name;
         this.wheigt = wheigt;
     }
-    name: string;
-    wheigt: Number;
 
     bark(): void {
         console.log('Bark');
@@ -16,6 +17,9 @@ class Dog {
 }
 
 const doge = new Dog('Toby', 10);
+
+doge.name = 'catioro'
+console.log(doge.name);
 
 doge.bark();
 doge.eat(3);

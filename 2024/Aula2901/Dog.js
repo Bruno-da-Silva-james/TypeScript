@@ -12,5 +12,7 @@ var Dog = /** @class */ (function () {
     return Dog;
 }());
 var doge = new Dog('Toby', 10);
+doge.name = 'catioro';
+console.log(doge.name);
 doge.bark();
 doge.eat(3);

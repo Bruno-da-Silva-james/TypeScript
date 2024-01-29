@@ -20,6 +20,24 @@ var Warrior = /** @class */ (function () {
     Warrior.prototype.lifeCheck = function () {
         console.log(this.health);
     };
+    Warrior.prototype.getName = function () {
+        this.name;
+    };
+    Warrior.prototype.setName = function (newName) {
+        this.name = newName;
+    };
+    Warrior.prototype.getType = function () {
+        this.type;
+    };
+    Warrior.prototype.seType = function (newType) {
+        this.type = newType;
+    };
+    Warrior.prototype.getForca = function () {
+        this.force;
+    };
+    Warrior.prototype.setForce = function (newForce) {
+        this.force = newForce;
+    };
     return Warrior;
 }());
 exports.Warrior = Warrior;

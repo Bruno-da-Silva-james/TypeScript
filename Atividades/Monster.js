@@ -19,6 +19,12 @@ var Monster = /** @class */ (function () {
     Monster.prototype.lifeCheck = function () {
         console.log(this.health);
     };
+    Monster.prototype.getName = function () {
+        this.name;
+    };
+    Monster.prototype.setName = function (newName) {
+        this.name = newName;
+    };
     return Monster;
 }());
 exports.Monster = Monster;

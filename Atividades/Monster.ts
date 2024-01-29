@@ -1,7 +1,7 @@
 import { Warrior } from "./Warrior"
 
 export class Monster {
-    name: string
+    private name: string
     force: number
     health: number
     constructor(name: string) {
@@ -10,18 +10,30 @@ export class Monster {
         this.name = name
     }
 
-    attackWarrior(target: Warrior): void {
+    private attackWarrior(target: Warrior): void {
         let attackDmg = this.force
         target.damageTaken(attackDmg)
         console.log(`${this.name} attacked ${target.name} causing ${attackDmg} damage.`)
     }
 
-    damageTaken(dmgRecived: number): void {
+    private damageTaken(dmgRecived: number): void {
         this.health -= dmgRecived
         console.log(`${this.name} suffered ${dmgRecived} damage. Remaining health: ${this.health}`);
     }
 
-    lifeCheck(): void{
+    private lifeCheck(): void{
         console.log(this.health);
+    }
+
+    getName(): void{
+        this.name
+    }
+
+    setName(newName: string): void{
+        this.name = newName
+    }
+
+    getFunc(): void{
+        let func = this.damageTaken
     }
 }

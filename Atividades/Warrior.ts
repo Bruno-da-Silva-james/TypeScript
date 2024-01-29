@@ -11,19 +11,43 @@ export class Warrior {
         this.force = force;
         this.health = 100;
     }
-    
-    attackMonster(target: Monster): void {
+
+    private attackMonster(target: Monster): void {
         let attackDmg = this.force;
-        target.damageTaken(attackDmg);
+        target.getFunc(attackDmg);
         console.log(`${this.name} attacked ${target.name} causing ${attackDmg} damage.`)
     }
 
-    damageTaken(dmgRecived: number): void {
+    private damageTaken(dmgRecived: number): void {
         this.health -= dmgRecived;
         console.log(`${this.name} suffered ${dmgRecived} damage. Remaining health: ${this.health}`);
     }
 
-    lifeCheck(): void{
+    private lifeCheck(): void {
         console.log(this.health);
     }
+
+    getName(): void {
+        this.name
+    }
+
+    setName(newName: string): void {
+        this.name = newName
+    }
+
+    getType(): void {
+        this.type
+    }
+
+    seType(newType: string): void {
+        this.type = newType
+    }
+    getForca(): void {
+        this.force
+    }
+
+    setForce(newForce: number): void {
+        this.force = newForce
+    }
+
 }
