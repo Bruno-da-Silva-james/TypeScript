@@ -4,8 +4,8 @@ import { Warrior } from "./Warrior";
 const Moonstro = new Monster('Canine')
 const Guerreiro = new Warrior('Perseus', 'Brute', 5)
 
-console.log(`\nMonster Stats:\nName: ${Moonstro.name}\nHealth: ${Moonstro.health}\nForce: ${Moonstro.force}`);
-console.log(`\nWarrior Stats:\nName: ${Guerreiro.name}\nType: ${Guerreiro.type}\nHealth: ${Guerreiro.health}\nForce: ${Guerreiro.force}\n`);
+console.log(`\nMonster Stats:\nName: ${Moonstro.getName()}\nHealth: ${Moonstro.health}\nForce: ${Moonstro.force}`);
+console.log(`\nWarrior Stats:\nName: ${Guerreiro.getName()}\nType: ${Guerreiro.getType()}\nHealth: ${Guerreiro.health}\nForce: ${Guerreiro.getForce()}\n`);
 
 Guerreiro.attackMonster(Moonstro)
 

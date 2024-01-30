@@ -11,7 +11,7 @@ var Warrior = /** @class */ (function () {
     Warrior.prototype.attackMonster = function (target) {
         var attackDmg = this.force;
         target.damageTaken(attackDmg);
-        console.log("".concat(this.name, " attacked ").concat(target.name, " causing ").concat(attackDmg, " damage."));
+        console.log("".concat(this.name, " attacked ").concat(target.getName(), " causing ").concat(attackDmg, " damage."));
     };
     Warrior.prototype.damageTaken = function (dmgRecived) {
         this.health -= dmgRecived;
@@ -32,7 +32,7 @@ var Warrior = /** @class */ (function () {
     Warrior.prototype.seType = function (newType) {
         this.type = newType;
     };
-    Warrior.prototype.getForca = function () {
+    Warrior.prototype.getForce = function () {
         this.force;
     };
     Warrior.prototype.setForce = function (newForce) {

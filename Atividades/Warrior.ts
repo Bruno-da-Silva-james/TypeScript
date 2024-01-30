@@ -1,10 +1,10 @@
 import { Monster } from "./Monster";
 
 export class Warrior {
-    name: string;
-    type: string;
+    private name: string;
+    private type: string;
     health: number;
-    force: number;
+    private force: number;
     constructor(name: string, type: string, force: number) {
         this.name = name;
         this.type = type;
@@ -12,18 +12,18 @@ export class Warrior {
         this.health = 100;
     }
 
-    private attackMonster(target: Monster): void {
+    attackMonster(target: Monster): void {
         let attackDmg = this.force;
-        target.getFunc(attackDmg);
-        console.log(`${this.name} attacked ${target.name} causing ${attackDmg} damage.`)
+        target.damageTaken(attackDmg);
+        console.log(`${this.name} attacked ${target.getName()} causing ${attackDmg} damage.`)
     }
 
-    private damageTaken(dmgRecived: number): void {
+    damageTaken(dmgRecived: number): void {
         this.health -= dmgRecived;
         console.log(`${this.name} suffered ${dmgRecived} damage. Remaining health: ${this.health}`);
     }
 
-    private lifeCheck(): void {
+    lifeCheck(): void {
         console.log(this.health);
     }
 
@@ -42,7 +42,7 @@ export class Warrior {
     seType(newType: string): void {
         this.type = newType
     }
-    getForca(): void {
+    getForce(): void {
         this.force
     }
 

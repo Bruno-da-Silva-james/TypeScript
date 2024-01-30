@@ -10,7 +10,7 @@ var Monster = /** @class */ (function () {
     Monster.prototype.attackWarrior = function (target) {
         var attackDmg = this.force;
         target.damageTaken(attackDmg);
-        console.log("".concat(this.name, " attacked ").concat(target.name, " causing ").concat(attackDmg, " damage."));
+        console.log("".concat(this.name, " attacked ").concat(target.getName, " causing ").concat(attackDmg, " damage."));
     };
     Monster.prototype.damageTaken = function (dmgRecived) {
         this.health -= dmgRecived;

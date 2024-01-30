@@ -10,30 +10,27 @@ export class Monster {
         this.name = name
     }
 
-    private attackWarrior(target: Warrior): void {
+    attackWarrior(target: Warrior): void {
         let attackDmg = this.force
         target.damageTaken(attackDmg)
-        console.log(`${this.name} attacked ${target.name} causing ${attackDmg} damage.`)
+        console.log(`${this.name} attacked ${target.getName} causing ${attackDmg} damage.`)
     }
 
-    private damageTaken(dmgRecived: number): void {
+    damageTaken(dmgRecived: number): void {
         this.health -= dmgRecived
         console.log(`${this.name} suffered ${dmgRecived} damage. Remaining health: ${this.health}`);
     }
 
-    private lifeCheck(): void{
+    lifeCheck(): void {
         console.log(this.health);
     }
 
-    getName(): void{
+    getName(): void {
         this.name
     }
 
-    setName(newName: string): void{
+    setName(newName: string): void {
         this.name = newName
     }
 
-    getFunc(): void{
-        let func = this.damageTaken
-    }
 }
