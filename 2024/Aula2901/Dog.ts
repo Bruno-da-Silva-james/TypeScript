@@ -1,21 +1,17 @@
-class Dog {
-    private name: string;
-    wheigt: Number;
+import { Animal } from "./Animal";
 
-    constructor(name: string, wheigt: Number) {
-        this.name = name;
-        this.wheigt = wheigt;
+class Dog extends Animal {
+    constructor(name: string, weight: number) {
+        super(name, weight);
+
     }
 
     bark(): void {
         console.log('Bark');
     }
 
-    eat(quantity: number): void {
-        console.log(`The dog ate ${quantity} food(s)`);
-    }
-}
 
+}
 const doge = new Dog('Toby', 10);
 
 doge.name = 'catioro'
