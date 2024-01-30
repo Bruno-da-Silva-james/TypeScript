@@ -1,0 +1,24 @@
+crie um sistema para representar animais em um zoológico.
+Cada animal tem um nome e uma idade.
+Há dois tipos de animais: mamíferos e aves.
+
+Classe Animal:
+Possui propriedades privadas para nome e idade.
+Métodos getters e setters para nome e idade.
+Um método emitSound() que exibe uma mensagem genérica de som.
+
+Classe Mammal(herda de Animal):
+Além de herdas propriedades e atributos de Animal, possui propriedade
+privada para pelagem (coat)
+Um metodo breastfeed() que exibe uma mensagem indicando que o mamífero
+está amamentando
+
+Classe Bird(herda de animal):
+Além de herdas propriedades e atributos de Animal, possui propriedade
+privada para envergadura (wingspan)
+Um método fly() que exibe uma mensagem indicando que a ave está voando.
+
+Crie instâncias de mamíferos e aves em um outro arquivo (index.ts por exemplo)
+Exiba as informações dos animais
+Chame os métodos específicos dos animais
+
