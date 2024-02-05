@@ -1,9 +1,9 @@
-import { Mammal } from "./Mammal";
-import { Bird } from "./Bird";
-
-const Sheep = new Mammal('Sheep',20,'Wool');
-const Owl = new Bird('Owl',4);
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Mammal_1 = require("./Mammal");
+var Bird_1 = require("./Bird");
+var Sheep = new Mammal_1.Mammal('Sheep', 20, 'Wool');
+var Owl = new Bird_1.Bird('Owl', 4);
 Sheep.emitSound('Sheep');
 Sheep.setCoat('Wool');
 console.log(Sheep.getCoat());
@@ -12,11 +12,9 @@ console.log(Sheep.getName());
 Sheep.setAge(10);
 console.log(Sheep.getAge());
 Sheep.breastfeed();
-
 Owl.emitSound('Chirp');
 Owl.fly();
 Owl.setWingspan(20);
 console.log(Owl.getWingspan());
-Owl.setName("Cruja")
+Owl.setName("Cruja");
 console.log(Owl.getName());
-

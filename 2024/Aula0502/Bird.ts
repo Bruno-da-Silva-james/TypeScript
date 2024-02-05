@@ -1,7 +1,7 @@
 import { Animal } from "./Animal";
 
 export class Bird extends Animal {
-    private wingspan: number;
+    protected wingspan: number;
     constructor(name: string, age: number) {
         super(age, name)
         

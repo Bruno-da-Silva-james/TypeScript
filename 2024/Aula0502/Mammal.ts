@@ -1,7 +1,7 @@
 import { Animal } from "./Animal";
 
 export class Mammal extends Animal {
-    private coat: string
+    protected coat: string
     constructor(name: string, age: number, coat: string) {
         super(age, name)
         this.coat = coat
@@ -11,12 +11,12 @@ export class Mammal extends Animal {
         console.log('This animal is now breastfeeding');
     }
 
-    public setCoat(v: string): void {
+    setCoat(v: string): void {
         this.coat = v;
     }
 
 
-    public getCoat(): string {
+    getCoat(): string {
         return this.coat
     }
 
