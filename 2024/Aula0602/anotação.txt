@@ -1,0 +1,25 @@
+Quando ha uma ? quer dizer que é opcional 
+
+interface sao regras para classes herdarem elas nao obtem a logica da funçao apenas como deve ser chamada, a funcao deve seguir esse "contrato" que sao as regras
+atributos que sao colocados na interface sao necessarios na classe.
+para adicionar o contrato na classe se usa o comando "implements" 
+
+sintaxe:
+
+class "nome" implements "nomeInterface"{
+
+    CONTEUDO 
+
+}
+
+classes podem extender tambem adicionando de outra interface com outros contratos ou regras
+
+sintaxe:
+
+interface "nome" extends "interfacePai"{
+
+    CONTEUDO
+
+}
+
+Criar um arquivo de codigo para cada interface com o mesmo nome da interface
