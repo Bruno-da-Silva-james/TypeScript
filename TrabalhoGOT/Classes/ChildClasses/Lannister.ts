@@ -6,4 +6,7 @@ export class Lannister extends NobleHouse{
         
     }
 
+    addHeir(nameHeir: string): void {
+        
+    }
 }

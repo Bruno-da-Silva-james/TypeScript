@@ -6,4 +6,9 @@ export class Baratheon extends NobleHouse{
         
     }
 
+    addHeir(nameHeir: string): void {
+        
+    }
+
+    
 }

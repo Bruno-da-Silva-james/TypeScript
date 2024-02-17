@@ -6,4 +6,7 @@ export class Targaryen extends NobleHouse{
         
     }
 
+    addHeir(nameHeir: string): void {
+        
+    }
 }

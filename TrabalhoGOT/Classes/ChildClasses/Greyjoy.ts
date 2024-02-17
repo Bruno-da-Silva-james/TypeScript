@@ -1,9 +1,17 @@
 import { NobleHouse } from "../NobleHouse";
 
 export class Greyjoy extends NobleHouse{
-    constructor(motto:string,name:string) {
+    heirList: Array <string>
+    constructor(motto:string,name:string, ) {
         super(name, motto);
         
     }
 
+    addHeir(nameHeir: string): void {
+        this.heirList.push(nameHeir)
+    }
+
+    checkHeritage(): Array<string> {
+        return this.heirList
+    }
 }

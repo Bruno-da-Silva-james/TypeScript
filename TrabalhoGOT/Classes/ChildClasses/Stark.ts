@@ -6,4 +6,7 @@ export class Stark extends NobleHouse{
         
     }
 
+    addHeir(nameHeir: string): void {
+        
+    }
 }
