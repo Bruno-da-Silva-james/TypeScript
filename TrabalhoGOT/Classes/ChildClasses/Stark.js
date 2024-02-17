@@ -20,9 +20,15 @@ var NobleHouse_1 = require("../NobleHouse");
 var Stark = /** @class */ (function (_super) {
     __extends(Stark, _super);
     function Stark(motto, name) {
-        return _super.call(this, name, motto) || this;
+        var _this = _super.call(this, name, motto) || this;
+        _this.heirList = [];
+        return _this;
     }
     Stark.prototype.addHeir = function (nameHeir) {
+        this.heirList.push(nameHeir);
+    };
+    Stark.prototype.checkHeritage = function () {
+        return this.heirList;
     };
     return Stark;
 }(NobleHouse_1.NobleHouse));

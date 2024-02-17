@@ -20,9 +20,15 @@ var NobleHouse_1 = require("../NobleHouse");
 var Lannister = /** @class */ (function (_super) {
     __extends(Lannister, _super);
     function Lannister(motto, name) {
-        return _super.call(this, name, motto) || this;
+        var _this = _super.call(this, name, motto) || this;
+        _this.heirList = [];
+        return _this;
     }
     Lannister.prototype.addHeir = function (nameHeir) {
+        this.heirList.push(nameHeir);
+    };
+    Lannister.prototype.checkHeritage = function () {
+        return this.heirList;
     };
     return Lannister;
 }(NobleHouse_1.NobleHouse));

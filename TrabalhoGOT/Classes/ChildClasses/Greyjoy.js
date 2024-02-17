@@ -20,7 +20,9 @@ var NobleHouse_1 = require("../NobleHouse");
 var Greyjoy = /** @class */ (function (_super) {
     __extends(Greyjoy, _super);
     function Greyjoy(motto, name) {
-        return _super.call(this, name, motto) || this;
+        var _this = _super.call(this, name, motto) || this;
+        _this.heirList = [];
+        return _this;
     }
     Greyjoy.prototype.addHeir = function (nameHeir) {
         this.heirList.push(nameHeir);

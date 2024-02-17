@@ -28,6 +28,4 @@ function battleOFtheHouses(nobleHouse1: string,nobleHouse2: string, army1Number:
 
 battleOFtheHouses(dudeNumber1.name,dudeNumber2.name,100,200)
 
-dudeNumber2.addHeir('sla')
 
-dudeNumber2.checkHeritage()

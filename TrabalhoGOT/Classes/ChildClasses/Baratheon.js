@@ -20,9 +20,15 @@ var NobleHouse_1 = require("../NobleHouse");
 var Baratheon = /** @class */ (function (_super) {
     __extends(Baratheon, _super);
     function Baratheon(motto, name) {
-        return _super.call(this, name, motto) || this;
+        var _this = _super.call(this, name, motto) || this;
+        _this.heirList = [];
+        return _this;
     }
     Baratheon.prototype.addHeir = function (nameHeir) {
+        this.heirList.push(nameHeir);
+    };
+    Baratheon.prototype.checkHeritage = function () {
+        return this.heirList;
     };
     return Baratheon;
 }(NobleHouse_1.NobleHouse));

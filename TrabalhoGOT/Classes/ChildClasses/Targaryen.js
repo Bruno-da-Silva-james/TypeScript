@@ -20,9 +20,15 @@ var NobleHouse_1 = require("../NobleHouse");
 var Targaryen = /** @class */ (function (_super) {
     __extends(Targaryen, _super);
     function Targaryen(motto, name) {
-        return _super.call(this, name, motto) || this;
+        var _this = _super.call(this, name, motto) || this;
+        _this.heirList = [];
+        return _this;
     }
     Targaryen.prototype.addHeir = function (nameHeir) {
+        this.heirList.push(nameHeir);
+    };
+    Targaryen.prototype.checkHeritage = function () {
+        return this.heirList;
     };
     return Targaryen;
 }(NobleHouse_1.NobleHouse));
