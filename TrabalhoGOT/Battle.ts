@@ -4,9 +4,9 @@ import { Lannister } from "./Classes/ChildClasses/Lannister";
 import { Stark } from "./Classes/ChildClasses/Stark";
 import { Targaryen } from "./Classes/ChildClasses/Targaryen";
 
-const houseNumber1 = new Baratheon('Example Motto', "Baratheon",100);
-const houseNumber2 = new Greyjoy('Example Motto', "Greyjoy",400);
-const houseNumber3 = new Lannister('Example Motto', "Lannister",300);
+const houseNumber1: Baratheon = new Baratheon('Example Motto', "Baratheon",100);
+const houseNumber2: Greyjoy = new Greyjoy('Example Motto', "Greyjoy",400);
+const houseNumber3: Lannister = new Lannister('Example Motto', "Lannister",300);
 const houseNumber4 = new Stark('Example Motto', "Stark",214);
 const houseNumber5 = new Targaryen('Example Motto', "Targaryen",150);
 
