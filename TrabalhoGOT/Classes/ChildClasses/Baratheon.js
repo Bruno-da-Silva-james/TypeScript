@@ -19,8 +19,8 @@ exports.Baratheon = void 0;
 var NobleHouse_1 = require("../NobleHouse");
 var Baratheon = /** @class */ (function (_super) {
     __extends(Baratheon, _super);
-    function Baratheon(motto, name) {
-        var _this = _super.call(this, name, motto) || this;
+    function Baratheon(motto, name, army) {
+        var _this = _super.call(this, name, motto, army) || this;
         _this.heirList = [];
         return _this;
     }

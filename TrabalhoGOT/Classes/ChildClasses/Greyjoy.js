@@ -19,8 +19,8 @@ exports.Greyjoy = void 0;
 var NobleHouse_1 = require("../NobleHouse");
 var Greyjoy = /** @class */ (function (_super) {
     __extends(Greyjoy, _super);
-    function Greyjoy(motto, name) {
-        var _this = _super.call(this, name, motto) || this;
+    function Greyjoy(motto, name, army) {
+        var _this = _super.call(this, name, motto, army) || this;
         _this.heirList = [];
         return _this;
     }

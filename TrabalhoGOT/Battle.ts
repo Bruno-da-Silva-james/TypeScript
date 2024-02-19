@@ -4,24 +4,35 @@ import { Lannister } from "./Classes/ChildClasses/Lannister";
 import { Stark } from "./Classes/ChildClasses/Stark";
 import { Targaryen } from "./Classes/ChildClasses/Targaryen";
 
-const houseNumber1 = new Baratheon('Example Motto',"Baratheon");
-const houseNumber2 = new Greyjoy('Example Motto',"Greyjoy");
-const houseNumber3 = new Lannister('Example Motto',"Lannister");
-const houseNumber4 = new Stark('Example Motto',"Stark");
-const houseNumber5 = new Targaryen('Example Motto',"Targaryen");
+const houseNumber1 = new Baratheon('Example Motto', "Baratheon",100);
+const houseNumber2 = new Greyjoy('Example Motto', "Greyjoy",400);
+const houseNumber3 = new Lannister('Example Motto', "Lannister",300);
+const houseNumber4 = new Stark('Example Motto', "Stark",214);
+const houseNumber5 = new Targaryen('Example Motto', "Targaryen",150);
 
-function battleOFtheHouses(nobleHouse1: string, army1:number, nobleHouse2: string,army2:number ,nobleHouse3: string,army3:number, nobleHouse4: string,army4:number,nobleHouse5: string, army5:number,) {
-    let armyNumber: Array <number> = []
-    
-    for (let i = 0; i < armyNumber.length; i++) {
-        if (i++ > i) {
-            i = i++
+function battleOFtheHouses(nobleHouse1: number, nobleHouse2: number, nobleHouse3: number, nobleHouse4: number,  nobleHouse5: number): void {
+    let phantomNumber: number = 0
+    let index: number
+    let armyNumber: Array<number> = [nobleHouse1, nobleHouse2,nobleHouse3, nobleHouse4, nobleHouse5]
+
+    for (let i = 1; i < armyNumber.length; i++) {
+        phantomNumber = armyNumber[i]
+        index = i
+
+        while (index > 0 && armyNumber[index - 1] > phantomNumber) {
+            armyNumber[index] = armyNumber[index - 1]
+            index--
         }
+        armyNumber[index] = phantomNumber
     }
+    console.log(`The winner of the battle has won with the army number of ${armyNumber[5]}`);
+    
 }
 
+houseNumber1.addHeir('Example')
+console.log(houseNumber1.checkHeritage());
 
+battleOFtheHouses(houseNumber1.army, houseNumber2.army, houseNumber3.army,  houseNumber4.army, houseNumber5.army)
 
-battleOFtheHouses(houseNumber1.name,100,houseNumber2.name,200,houseNumber3.name,150,houseNumber4.name,201,houseNumber5.name,135)
 
 

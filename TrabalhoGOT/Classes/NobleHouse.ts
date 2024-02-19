@@ -4,9 +4,11 @@ export class NobleHouse {
     name : string;
     motto : string;
     heirList: Array<string>;
-    constructor(name: string, motto:string) {
+    army: number
+    constructor(name: string, motto:string, army:number) {
         this.motto = motto
         this.name = name
+        this.army = army
     }
 
     addHeir(nameHeir:string):void{

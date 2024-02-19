@@ -19,8 +19,8 @@ exports.Targaryen = void 0;
 var NobleHouse_1 = require("../NobleHouse");
 var Targaryen = /** @class */ (function (_super) {
     __extends(Targaryen, _super);
-    function Targaryen(motto, name) {
-        var _this = _super.call(this, name, motto) || this;
+    function Targaryen(motto, name, army) {
+        var _this = _super.call(this, name, motto, army) || this;
         _this.heirList = [];
         return _this;
     }

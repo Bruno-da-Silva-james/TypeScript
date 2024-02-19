@@ -19,8 +19,8 @@ exports.Lannister = void 0;
 var NobleHouse_1 = require("../NobleHouse");
 var Lannister = /** @class */ (function (_super) {
     __extends(Lannister, _super);
-    function Lannister(motto, name) {
-        var _this = _super.call(this, name, motto) || this;
+    function Lannister(motto, name, army) {
+        var _this = _super.call(this, name, motto, army) || this;
         _this.heirList = [];
         return _this;
     }
