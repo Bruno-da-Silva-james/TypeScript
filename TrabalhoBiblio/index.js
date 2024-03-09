@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Livro_1 = require("./Classes/Livro");
+var Status_1 = require("./Enums/Status");
+var Genero_1 = require("./Enums/Genero");
+var LivroAtrasado_1 = require("./Function/LivroAtrasado");
+var livroEmprestado_1 = require("./Function/livroEmprestado");
+var livrosDisponivel_1 = require("./Function/livrosDisponivel");
+var livro1 = new Livro_1.Livro(Status_1.Status.atrasado, 'A espera de um milagre ', 'nao sei', Genero_1.Genero.melancolico);
+var livro2 = new Livro_1.Livro(Status_1.Status.disponivel, 'teste', 'teste', Genero_1.Genero.acao);
+var livro3 = new Livro_1.Livro(Status_1.Status.emprestado, 'input', 'input', Genero_1.Genero.fantasia);
+var livro4 = new Livro_1.Livro(Status_1.Status.reservado, 'input', 'input', Genero_1.Genero.terror);
+(0, LivroAtrasado_1.livroAtrasado)(livro1, livro2, livro3, livro4);
+(0, livroEmprestado_1.livroEmprestado)(livro1, livro2, livro3, livro4);
+(0, livrosDisponivel_1.livrosDisponiveis)(livro1, livro2, livro3, livro4);
