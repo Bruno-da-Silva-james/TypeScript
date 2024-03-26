@@ -1,4 +1,6 @@
-export class ArrayQueue {
+import { IQueue } from "../Interface/IQueue";
+
+export class ArrayQueue implements IQueue {
   private items: Array<any>;
 
   constructor() {
