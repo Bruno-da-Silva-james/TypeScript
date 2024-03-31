@@ -1,4 +1,5 @@
 import { Pedidos } from "../Classes/Pedidos";
+import { GerPedidos } from "../Enum/GerPedidos";
 
 export class FilaDePedidos {
   private pedidos: Array<object>;
@@ -9,13 +10,18 @@ export class FilaDePedidos {
 
   adicionarPedido(pedido: Pedidos): void {
     if ((pedido.prioridade == GerPedidos.Bar)) {
-      this.pedidos.push(pedido);
+      this.pedidos.unshift(pedido);
     }
     if ((pedido.prioridade == GerPedidos.Cozinha)) {
       this.pedidos.push(pedido);
     }
+    if (pedido.prioridade == GerPedidos.Area_de_sobremesas){
     this.pedidos.push(pedido)
-    
+    }
+  }
+
+  olharLista(): void{
+    console.log(this.pedidos);
   }
 
   removerPedido(): any | null {
