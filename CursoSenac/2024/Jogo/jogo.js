@@ -61,7 +61,7 @@ var Game = /** @class */ (function () {
         this.lastObstacleTime = 0; // Inicializa o último momento em que um obstáculo foi criado
         this.score = 0; // Inicializa a pontuação do jogador
         this.gameOver = false; // Define o estado inicial do jogo como não finalizado
-        canvas.addEventListener('keydown', this.movePlayer.bind(this)); // Adiciona um ouvinte de evento para mover o jogador com o mouse
+        canvas.addEventListener('mousemove', this.movePlayer.bind(this)); // Adiciona um ouvinte de evento para mover o jogador com o mouse
         // Chamamos o método para criar os obstáculos
         this.createObstacles();
     }
