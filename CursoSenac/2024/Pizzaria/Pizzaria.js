@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Pizza_1 = require("./Pizza");
+var SaborPizza_1 = require("./SaborPizza");
+var pizza1 = new Pizza_1.Pizza(SaborPizza_1.SaborPizza.calabresa, "G");
+var pizza2 = new Pizza_1.Pizza(SaborPizza_1.SaborPizza.coracao, "P");
+var pizza3 = new Pizza_1.Pizza(SaborPizza_1.SaborPizza.chester, "M");
+pizza1.descricao();
+pizza2.descricao();
+pizza3.descricao();
