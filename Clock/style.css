@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+#boxTime{
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(1, 72, 1);
+    border: 2px solid lightgray;
+}
+
+#time{
+}
