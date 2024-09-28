@@ -1,21 +1,27 @@
+const boards: number[][] = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
 
-const boards: number[][] = [[0,0,0],[0,0,0],[0,0,0]]
+function displayBoard(board: number[][]): void {
+  for (let i = 0; i < board.length; i++) {
+    console.log(board[i]);
+  }
+}
 
-function displayBoard(board: number[][]):void {
-    for (let i = 0; i < board.length; i++) {
-        console.log(board[i]);
+function iaPlay(board: number[][]): void {
+  let line: number = Math.floor(Math.random() * 3);
+  let col: number = Math.floor(Math.random() * 3);
+  let test: boolean = false
+
+  while (test) {
+    if (board[col][line] == 1) {
+      
     }
+  }
 }
 
-
-function play(board: number[][]):number {
-    let line = Math.floor(Math.random() * 2) + 1;
-    let col = Math.floor(Math.random() * 2) + 1;
-    board[line][col] =
-    
-    
-}
-
-
-
-displayBoard(boards)
+displayBoard(boards);
+iaPlay(boards);
+displayBoard(boards);
