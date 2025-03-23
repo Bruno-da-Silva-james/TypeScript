@@ -1,15 +1,22 @@
-var boards = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+var boards = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+];
 function displayBoard(board) {
     for (var i = 0; i < board.length; i++) {
         console.log(board[i]);
     }
 }
-function play(board) {
+function iaPlay(board) {
     var line = Math.floor(Math.random() * 3);
     var col = Math.floor(Math.random() * 3);
-    board[line][col] = 1;
-    console.log(line, col);
+    var test = false;
+    while (test) {
+        if (board[col][line] == 1) {
+        }
+    }
 }
 displayBoard(boards);
-play(boards);
+iaPlay(boards);
 displayBoard(boards);
