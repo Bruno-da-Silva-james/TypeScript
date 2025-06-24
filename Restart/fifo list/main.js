@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var fifo_1 = require("./fifo");
+var lista = new fifo_1.fifo();
+lista.addTask('Test');
+lista.showList();
+lista.addTask('Test 2');
+lista.showList();
+lista.finishTask();
+lista.showList();
