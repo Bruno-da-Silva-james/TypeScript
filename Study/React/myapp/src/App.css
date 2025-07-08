@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+#HeaderButton{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif'nn;
+  font-size: 1em;
+  padding: 20px;
+  background-color: black;
+  border-color: purple;
+}
+
 #PhotoCard{
   margin-top: 200px;
   margin-left: 300px;
