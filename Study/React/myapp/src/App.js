@@ -20,7 +20,7 @@ function Card() {
         <image></image>
       </div>
       <div id="Text">
-      <a1>Test</a1>
+        <a1>Test</a1>
       </div>
     </div>
   );
@@ -31,7 +31,11 @@ export default function Main() {
     <div className="App">
       <div className="Header">
         <a1>Bruno da Silva James</a1>
-        <HeaderButton></HeaderButton>
+        <div className="ButtonHolder">
+          <HeaderButton></HeaderButton>
+          <HeaderButton></HeaderButton>
+          <HeaderButton></HeaderButton>
+        </div>
       </div>
       <Test />
       <Card></Card>
