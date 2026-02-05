@@ -1,13 +1,17 @@
 import { DATABASE } from "./Firebase";
+import { Task } from "./Task";
+
 
 class ListManager {
   constructor() {}
 
-  addTask() {}
+  addTask( task: Task) {
 
-  removeTask() {}
+  }
 
-  updateTask() {}
+  removeTask(task: Task) {}
 
-  getTasks() {}
+  updateTask(task: Task) {}
+
+  getTasks(task: Task) {}
 }
